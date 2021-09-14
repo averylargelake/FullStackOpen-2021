@@ -43,3 +43,29 @@ const handleClick = () => {
   plus
 </button>
 */
+
+/*deconstruction
+const Hello = (props) => {
+  const { name, age } = props
+  const bornYear = () => new Date().getFullYear() - age
+
+  const Hello = ({ name, age }) => {
+  const bornYear = () => new Date().getFullYear() - age
+*/
+
+/*react hooks
+import React, { useState } from 'react'
+
+const App = () => {
+  const [ counter, setCounter ] = useState(0)
+
+    setTimeout(
+    () => setCounter(counter + 1),
+    1000
+  )
+
+  return (
+    <div>{counter}</div>
+  )
+}
+*/

@@ -1,0 +1,19 @@
+BROWSER->+SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+SERVER-->-BROWSER: html code
+
+BROWSER->+SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+SERVER-->-BROWSER: css code
+
+BROWSER->+SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+SERVER-->-BROWSER: js code
+
+note over BROWSER
+browser executes js code which causes http get for json
+end note
+
+BROWSER->+SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+SERVER-->-BROWSER: json data
+
+note over BROWSER
+browser executes event handler
+end note

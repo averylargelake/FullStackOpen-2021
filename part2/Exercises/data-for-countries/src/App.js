@@ -23,9 +23,9 @@ const App = () => {
     setFilter(event.target.value)
 
       
-      const listfilteredCountries = allCountries.filter(country => country.name.toUpperCase().includes(event.target.value.toUpperCase()))
+      const listFilteredCountries = allCountries.filter(country => country.name.toUpperCase().includes(event.target.value.toUpperCase()))
 
-      setFilteredCountries(listfilteredCountries)
+      setFilteredCountries(listFilteredCountries)
 
   }
 
